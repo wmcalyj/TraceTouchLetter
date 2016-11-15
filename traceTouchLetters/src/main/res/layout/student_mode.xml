@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="com.example.tracetouchletters.MainActivity">
+
+    <!--
+         <nxr.tpad.lib.views.FrictionMapView
+        android:id="@+id/studentHapticView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/studentPrevLetter" />
+    -->
+
+    <com.example.tracetouchletters.views.MyImageView
+        android:id="@+id/studentText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/studentPrevLetter"
+        android:layout_marginBottom="10dp"/>
+
+
+    <ImageButton
+        android:id="@+id/studentPrevLetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/studentHapticPrevDesc"
+        android:src="@drawable/leftarrow32"/>
+
+    <ImageButton
+        android:id="@+id/studentNextLetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/studentText"
+        android:contentDescription="@string/studentHapticNextDesc"
+        android:src="@drawable/rightarrow32"/>
+
+
+</RelativeLayout>

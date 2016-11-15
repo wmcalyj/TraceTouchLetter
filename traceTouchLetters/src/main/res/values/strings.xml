@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TraceTouchLetters</string>
+    <string name="app_intro1">My Trace &amp;</string>
+    <string name="app_intro2">Touch Letters</string>
+    <string name="action_settings">Settings</string>
+    <string name="start">Start</string>
+    <string name="teacherMode">Teacher Mode</string>
+    <string name="studentMode">Student Mode</string>
+    <string name="lightest">Lightest</string>
+    <string name="strongest">Strongest</string>
+    <string name="smallest">Smallest</string>
+    <string name="largest">Largest</string>
+    <string name="hapticTypeAndStrength">Haptic Type and Strength</string>
+    <string name="noHaptic">No Haptics</string>
+    <string name="save">Save</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="previous">Prev</string>
+    <string name="haptciViewDescription">Haptic Layer</string>
+    <string name="upperCase">Upper</string>
+    <string name="lowerCase">Lower</string>
+    <string name="teacherHapticStrengthType">Haptic Strength and Type</string>
+    <string name="teacherHapticPlacement">Haptic Placement</string>
+    <string name="settingsCancelDesc">Cancel saving haptic settings</string>
+    <string name="settingsSaveDesc">Save haptic settings</string>
+    <string name="imangeviewdesc">Haptic Image View</string>
+    <string name="hapticBackgroundTitle">Haptic\nBackground</string>
+    <string name="hapticLetterTitle">Haptic\nLetter</string>
+    <string name="hapticDirectionTitle">Forced\nDirection</string>
+    <string name="hapticPlacementTitle">Haptic Placement</string>
+    <string name="studentHapticPrevDesc">Previous Letter</string>
+    <string name="studentHapticNextDesc">Next Letter</string>
+    <string name="charA">A</string>
+    <string name="hapticTypeAndStrengthPreview">preview:</string>
+    <string name="caseSelection">Case Selection</string>
+
+</resources>

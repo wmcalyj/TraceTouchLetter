@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="com.example.tracetouchletters.MainActivity">
+
+    <TextView
+        android:id="@+id/hapticTypeAndStrength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/hapticTypeAndStrength"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <SeekBar
+        android:id="@+id/hapticStrengthBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hapticTypeAndStrength"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/lightest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/hapticStrengthBar"
+        android:layout_below="@id/hapticStrengthBar"
+        android:text="@string/lightest"/>
+
+    <TextView
+        android:id="@+id/strongest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/hapticStrengthBar"
+        android:layout_below="@id/hapticStrengthBar"
+        android:text="@string/strongest"/>
+
+    <SeekBar
+        android:id="@+id/hapticRoughnessBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lightest"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/smallest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/hapticRoughnessBar"
+        android:layout_below="@id/hapticRoughnessBar"
+        android:text="@string/smallest"/>
+
+    <TextView
+        android:id="@+id/largest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/hapticRoughnessBar"
+        android:layout_below="@id/hapticRoughnessBar"
+        android:text="@string/largest"/>
+
+    <TextView
+        android:id="@+id/hapticTypeAndStrengthPreviewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hapticTypeAndStrengthOK"
+        android:layout_alignStart="@+id/smallest"
+        android:layout_below="@id/largest"
+        android:layout_marginTop="20dp"
+        android:text="@string/hapticTypeAndStrengthPreview"/>
+
+    <com.example.tracetouchletters.views.MyImageView
+        android:id="@+id/hapticTypeAndStrengthPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/hapticTypeAndStrengthOK"
+        android:layout_alignEnd="@id/largest"
+        android:layout_below="@id/largest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/hapticTypeAndStrengthPreviewTitle"
+        app:noChar="true"
+    />
+
+    <Button
+        android:id="@+id/hapticTypeAndStrengthCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/hapticTypeAndStrengthOK"
+        android:layout_alignStart="@id/hapticStrengthBar"
+        android:width="90dp"
+        android:text="@string/cancel"/>
+
+    <Button
+        android:id="@+id/hapticTypeAndStrengthOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/hapticStrengthBar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:width="90dp"
+        android:text="@string/ok"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="MyImageView">
+        <attr name="noChar" format="boolean"/>
+        <attr name="previewMode" format="boolean"/>
+        <attr name="previewHapticPlacement" format="enum">
+            <enum name="BACKGROUND" value="0"/>
+            <enum name="LETTER" value="1"/>
+            <enum name="DIRECTION" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/res/merged/debug/xml/device_filter.xml",
+        "source": "/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/TPadLib/tPadLib/unspecified/res/xml/device_filter.xml"
+    },
+    {
+        "merged": "/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/res/merged/debug/xml/accessory_filter.xml",
+        "source": "/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/TPadLib/tPadLib/unspecified/res/xml/accessory_filter.xml"
+    }
+]

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="be37c40349d877dff82745aa9c99849cbe42cda2">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_51332c025cdb7a987e67815b7f7f2900d5fe8da2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/TPadLib/tPadLib/unspecified/jars/libs/ioiolibandroid.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e2e92fa8a7df8ddc3d96b3bbf6eec123ba309b7">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/8/ioiolibandroid_035436f92df53232ae0966a192dd64c06c509d6a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Applications/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_a19eb20972c77b886fa1bb1629d9121102de9921/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_75831b20f10db2ce4cd684e4f1beb5d3a82ae693/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/com.github.AndroidDeveloperLB/AutoFitTextView/4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5880f5642289dc848767dde117cae073f9fc9952">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.AndroidDeveloperLB-AutoFitTextView-4_06f4d3aac655a03171630c7ce91c906304c0001e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.0_a4f34dac8b14e45f3425bc6ae14d8bd7dce90c67/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_457659e72c694a2bcd1eadd5d905adf2d9039b8c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_fdb3239073cf8594875ba10c890d01ca7873ab4a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/TPadLib/tPadLib/unspecified/jars/libs/ioiolibandroiddevice.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9d9436fcab7bb8dae8618e296b5ee950868283d6">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/8/ioiolibandroiddevice_dc213d3d7597a333f73536ba538225e9571ee607/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_23ccb5100ee2f2a4e70ec7cc6148d700e9d5c045/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_c22098723c461a3a9806955eb1267dc2e6d0c029/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/libs/ioiolibandroiddevice.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f9d9cf11cabd6f34d2376d05118ba5cebcc84c91">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/2/ioiolibandroiddevice_f1f89b33b95f75898e5494327855e4a5b0a52ae9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_d2673ebc7c9ced0fe712c16fcbdd5f446d257f5f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/TPadLib/tPadLib/unspecified/jars/libs/ioiolibaccessory.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1b1871a24e404f7c982d1f8cee9e76688b2b40ac">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/8/ioiolibaccessory_8beb41db9bc473494dd1501b6be34c7cbf68d3a7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/libs/ioiolibandroid.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76bdc56db522d871c8001096539f596e56011f70">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/2/ioiolibandroid_f5642a4503add7806e1f2d98d22d3aaac79091fe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_741eec99b2c551c0e3c441e4dcec09bd1711879b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/libs/opencv library - 2.4.10.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e8be98f3ef8c75fa1d24785e03e8353f619af65b">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/2/opencv library - 2.4.10_6c19d52e106ff8ad5ea2c663c678b160f3261443/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/libs/ioiolibaccessory.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510e4be5fd0919880858f3ced0f98f0f3af33a0c">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/2/ioiolibaccessory_bcca501ba0449e599fe10af30e7c440a187a1451/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_02093ed45be9d0d135d3614cb491be5bd225656c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aabb10cbd5d9f8d8e5c0af0cc2e7655c04e3b2fe">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_23ba2b97a614818b28a85e44a171aff42c82e39b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/TPadLib/tPadLib/unspecified/jars/libs/opencv library - 2.4.10.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9316dcfc655b31cf38369bd336b93a9adff643c9">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/8/opencv library - 2.4.10_365faa79a6dea3d8e3d9339856ea65ad06282a3f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_a3182715601a037353a7dee12d51ac3e781bfd71/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_dc7b11134f9896845920d2a87cf3a7f297c3dbc9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.0_48496ba11fd37c63841bc15bdddcb8f7f3dec4d7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_106fc28564198bf2797f4a6daa373b472c611c32/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.0_91ce279586704328d9f0d914042141e49a2706a5/classes.dex" />
+    </item>
+
+</items>
