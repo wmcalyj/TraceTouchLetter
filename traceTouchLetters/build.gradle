@@ -8,6 +8,7 @@ android {
         applicationId "com.example.tracetouchletters"
         minSdkVersion 19
         targetSdkVersion 19
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -20,11 +21,9 @@ android {
 
 dependencies {
     compile project(':tPadLib')
-    compile 'com.android.support:support-v4:25.0.0'
-    compile files('libs/ioiolibaccessory.jar')
-    compile files('libs/ioiolibandroid.jar')
-    compile files('libs/ioiolibandroiddevice.jar')
-    compile files('libs/opencv library - 2.4.10.jar')
-    compile 'com.android.support:appcompat-v7:25.0.0'
+//    compile files('libs/ioiolibaccessory.jar')
+//    compile files('libs/ioiolibandroid.jar')
+//    compile files('libs/ioiolibandroiddevice.jar')
+//    compile files('libs/opencv library - 2.4.10.jar')
     compile 'com.github.AndroidDeveloperLB:AutoFitTextView:4'
 }

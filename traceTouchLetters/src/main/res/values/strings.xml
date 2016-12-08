@@ -36,5 +36,9 @@
     <string name="charA">A</string>
     <string name="hapticTypeAndStrengthPreview">preview:</string>
     <string name="caseSelection">Case Selection</string>
+    <string name="teacher_draw_direction_cancel">Cancel</string>
+    <string name="teacher_draw_direction_save">Save</string>
+    <string name="teacher_draw_direction_undo">Undo</string>
+    <string name="teacher_settings_selection_draw_letter_direction">Draw Letter Direction</string>
 
 </resources>

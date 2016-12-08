@@ -50,6 +50,15 @@ public class SettingsSelectionActivity extends Activity {
                 startActivity(intent);
             }
         });
+        Button drawDirection = (Button) findViewById(R.id.teacherDrawDirection);
+        drawDirection.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SettingsSelectionActivity.this,
+                        TeacherDrawDirectionActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     protected void setSaveCancelButtons() {

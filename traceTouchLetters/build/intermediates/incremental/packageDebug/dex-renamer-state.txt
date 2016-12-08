@@ -1,7 +1,0 @@
-#Tue Nov 15 10:49:40 CST 2016
-base.0=/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_23ba2b97a614818b28a85e44a171aff42c82e39b
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_51332c025cdb7a987e67815b7f7f2900d5fe8da2/classes.dex
-base.1=/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_51332c025cdb7a987e67815b7f7f2900d5fe8da2
-file.0=/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_23ba2b97a614818b28a85e44a171aff42c82e39b/classes.dex

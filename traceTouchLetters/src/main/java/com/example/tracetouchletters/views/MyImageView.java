@@ -3,6 +3,10 @@ package com.example.tracetouchletters.views;
 import com.example.tracetouchletters.constants.AppCtx;
 import com.example.tracetouchletters.R;
 import com.example.tracetouchletters.constants.HapticPlacement;
+import com.example.tracetouchletters.letterdirection.AllLettersDirection;
+import com.example.tracetouchletters.letterdirection.Direction;
+import com.example.tracetouchletters.letterdirection.LetterDirection;
+import com.example.tracetouchletters.letterdirection.Point;
 import com.example.tracetouchletters.service.MyTPadService;
 
 import android.content.Context;
@@ -18,6 +22,9 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.ImageView;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import nxr.tpad.lib.TPad;
 
 import static com.example.tracetouchletters.constants.HapticPlacement.BACKGROUND;
@@ -32,6 +39,7 @@ public class MyImageView extends ImageView {
     final int letterBackgroundColor = Color.WHITE;
     final int backgroundBackgroundColor = Color.BLACK;
     final int directionBackgroundColor = Color.GRAY;
+    private final boolean DEBUG = true;
     protected Paint paint;
     protected Rect bounds;
     Bitmap mBmp;
@@ -42,7 +50,13 @@ public class MyImageView extends ImageView {
     MyTPadService myTpadSevice;
     boolean noChar, isPreview;
     Integer hapticType;
-    private boolean log = false;
+    LetterDirection letterDirection;
+    int cacheCount;
+    // For direction
+    private int directionIdx;
+    private int pointIdx;
+    private LinkedList<Point> moveCache;
+    private double differTolerance;
     private Character ch = 'A';
 
 
@@ -63,14 +77,27 @@ public class MyImageView extends ImageView {
 
     protected void init(Context context, AttributeSet attrs) {
         paint = new Paint();
-        paint = new Paint();
         paint.setTypeface(Typeface.DEFAULT_BOLD);
         paint.setColor(Color.BLACK);
         paint.setStyle(Paint.Style.FILL);
         paint.setAntiAlias(true);
         bounds = new Rect();
-        myTpadSevice = new MyTPadService();
+//        myTpadSevice = new MyTPadService();
         readCustomAttributes(context, attrs);
+
+        letterDirection = AllLettersDirection.getInstance().getLetterDirection(ch);
+        directionIdx = 0;
+        pointIdx = 0;
+        moveCache = new LinkedList<Point>();
+        cacheCount = 3;
+        differTolerance = 135;
+
+        if (DEBUG) {
+            checkLetterDirection(letterDirection);
+        }
+
+
+//        t.start();
     }
 
     protected void readCustomAttributes(Context context, AttributeSet attrs) {
@@ -188,20 +215,16 @@ public class MyImageView extends ImageView {
         }
         paint.setTextSize(textSize);
         paint.getTextBounds(text, 0, text.length(), bounds);
-        if (log) {
-            Log.d(TAG, "TextSize: " + paint.getTextSize());
-            Log.d(TAG, "TextSize: " + paint.getTextSize());
-            Log.d(TAG, "measuredWidth: " + measuredWidth + ", measuredHeight: " +
-                    measuredHeight);
-            Log.d(TAG, "viewWidth: " + viewWidth + ", viewHeight: " + viewHeight);
-        }
+//        if (DEBUG) {
+//            Log.d(TAG, "TextSize: " + paint.getTextSize());
+//            Log.d(TAG, "TextSize: " + paint.getTextSize());
+//            Log.d(TAG, "measuredWidth: " + measuredWidth + ", measuredHeight: " +
+//                    measuredHeight);
+//            Log.d(TAG, "viewWidth: " + viewWidth + ", viewHeight: " + viewHeight);
+//        Log.d(TAG, "StartX: " + -bounds.left + ", StartY: " + -bounds.top);
+//        }
 
-        int startX = (int) Math.floor((viewWidth / 2 - measuredWidth / 2));
-        int startY = viewHeight / 2 + measuredHeight / 2;
-        if (log) {
-            Log.d(TAG, "StartX: " + startX + ", StartY: " + startY);
-        }
-        myCanvas.drawText(String.valueOf(ch), -bounds.left,
+        myCanvas.drawText(text, -bounds.left,
                 -bounds.top,
                 paint);
         this.setImageBitmap(mBmp);
@@ -229,12 +252,18 @@ public class MyImageView extends ImageView {
     }
 
     @Override
-    public boolean onTouchEvent(MotionEvent event) {
+    public boolean onTouchEvent(final MotionEvent event) {
         if (mTpad == null || !mTpad.getBound()) {
             Log.e(TAG, "TPad is null or not connected");
             return false;
         }
         generateFriction(isPreview, noChar, event);
+//
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//            }
+//        }).start();
         return true;
     }
 
@@ -282,14 +311,117 @@ public class MyImageView extends ImageView {
                 }
                 break;
             case DIRECTION:
-                Log.i(TAG, "Haptic Placement is DIRECTION, do nothing");
+                if (letterDirection == null) {
+                    Log.i(TAG, "No letter direction for letter: " + ch);
+                } else {
+                    generateDirectionCharFriction(isPreview, event, letterDirection);
+                }
                 break;
             default:
                 Log.e(TAG, "Unknown Haptic Placement: " + placement);
                 break;
         }
+    }
 
+    private void generateDirectionCharFriction(boolean isPreview, MotionEvent event,
+                                               LetterDirection letterDirection) {
+        // TODO
+        Direction currentDirection = letterDirection.directions.get(directionIdx);
+        List<Point> oneDirection = currentDirection.oneDirection;
+        int totalPoints = oneDirection.size();
+        Point currentPoint = oneDirection.get(pointIdx);
 
+        float touchX = event.getX(), touchY = event.getY();
+        switch (event.getActionMasked()) {
+            case MotionEvent.ACTION_DOWN:
+                moveCache.offer(new Point(touchX, touchY));
+                break;
+            case MotionEvent.ACTION_MOVE:
+                if (pointOutOfBoard(mBmp.getPixel((int) touchX, (int) touchY))) {
+                    mTpad.sendFrictionBuffer(myTpadSevice.calculateFrictionBuffer
+                            (isPreview));
+                    break;
+                }
+                if (pointIdx >= totalPoints - cacheCount - 1) {
+                    pointIdx = totalPoints - cacheCount - 1;
+                } else {
+                    if (moveCache.size() <= cacheCount) {
+                        moveCache.offer(new Point(touchX, touchY));
+                    } else {
+                        // Cache is full, calculate a
+                        double averageAngle = 0;
+                        for (int i = 0; i < moveCache.size() - 1; i++) {
+                            double vectorSX = (moveCache.get(i + 1).x - moveCache.get(i).x),
+                                    vectorSY = (moveCache.get(i + 1).y - moveCache.get(i).y);
+                            double vectorTX = (oneDirection.get(i + 1 + pointIdx).x -
+                                    oneDirection.get(i + pointIdx).x),
+                                    vectorTY = (oneDirection.get(i + 1 + pointIdx).y -
+                                            oneDirection.get(i + pointIdx).y);
+                            double angle = (float) Math.toDegrees(Math.atan2(vectorTY - vectorSY,
+                                    vectorTX - vectorSX));
+
+                            Log.d(TAG, "vectorSX: " + vectorSX + ", vectorSY: " + vectorSY +
+                                    ", vectorTX: " + vectorTX + ", vectorTY:" + vectorTY);
+                            Log.d(TAG, "Angle is: " + angle);
+                            averageAngle += Math.abs(angle);
+                        }
+
+                        averageAngle /= moveCache.size() - 1;
+                        if (DEBUG) {
+                            Log.d(TAG, "angle difference: " + averageAngle);
+                        }
+                        if (Math.abs(averageAngle) > differTolerance) {
+                            mTpad.sendFrictionBuffer(myTpadSevice.calculateFrictionBuffer
+                                    (isPreview));
+                        } else {
+                            mTpad.turnOff();
+                        }
+                        // Pop out the first element
+                        if (!moveCache.isEmpty()) {
+                            moveCache.pop();
+                        }
+                        // Insert the new element
+                        moveCache.offer(new Point(touchX, touchY));
+                        pointIdx++;
+                    }
+                }
+                break;
+            case MotionEvent.ACTION_UP:
+                directionIdx++;
+                if (directionIdx == letterDirection.directions.size()) {
+                    directionIdx = 0;
+                }
+                pointIdx = 0;
+                moveCache.clear();
+                mTpad.turnOff();
+                break;
+        }
+    }
+
+    private boolean pointOutOfBoard(int pixelColor) {
+        if (!compareColor(paintTextDirectionColor, pixelColor)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    private void checkLetterDirection(LetterDirection letterDirection) {
+        if (letterDirection == null) {
+            return;
+        }
+        StringBuilder sb = new StringBuilder();
+        String letter = letterDirection.letter;
+        sb.append("For letter: ").append(letter).append("\n");
+        int count = 1;
+        for (Direction direction : letterDirection.directions) {
+            sb.append("Direction ").append(count++).append(" {");
+            for (Point p : direction.oneDirection) {
+                sb.append("[").append(p.x).append(", ").append(p.y).append("]");
+            }
+            sb.append("}\n");
+        }
+        Log.i(TAG, sb.toString());
     }
 
     protected void generateNoCharFriction(MotionEvent event) {
