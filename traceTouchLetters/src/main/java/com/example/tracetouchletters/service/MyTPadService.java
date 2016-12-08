@@ -32,9 +32,10 @@ public class MyTPadService extends TPadImpl {
 
         float amp = isPreview ? (float) (AppCtx.tmpHapticStrength / 100.00) : (float) (AppCtx
                 .hapticStrength / 100.00);
-        float freq = isPreview ? (float) (AppCtx.tmpHapticRoughness / 100.00) : (float) (AppCtx
-                .hapticRoughness / 100.00) * 1809 + 20;
-        return getSinusoidFrictionBuffer(amp, freq);
+        float freq = isPreview ? (float) (AppCtx.tmpHapticRoughness / 100.00) * 230 + 20 :
+                (float) (AppCtx
+                        .hapticRoughness / 100.00) * 230 + 20;
+        return getSinusoidFrictionBuffer(freq, amp);
     }
 
     public float[] calculateFrictionBuffer(float base, float noise) {

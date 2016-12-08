@@ -82,7 +82,7 @@ public class MyImageView extends ImageView {
         paint.setStyle(Paint.Style.FILL);
         paint.setAntiAlias(true);
         bounds = new Rect();
-//        myTpadSevice = new MyTPadService();
+        myTpadSevice = new MyTPadService(context);
         readCustomAttributes(context, attrs);
 
         letterDirection = AllLettersDirection.getInstance().getLetterDirection(ch);

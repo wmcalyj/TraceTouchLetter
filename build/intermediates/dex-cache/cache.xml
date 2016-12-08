@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="edb4d64699c2dc4a085a6ddecfecdf0980147fca">
+        sha1="21350221317ca42abc7c64a70948c5116122ee94">
         <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_51332c025cdb7a987e67815b7f7f2900d5fe8da2/classes.dex" />
     </item>
     <item
@@ -88,7 +88,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="d907cd6628bec1146b1e453f75309963d9249e69">
+        sha1="4b06d4ed168b5b5a6b60d1a39f38559482c4f065">
         <dex dex="/Users/mengchaowang/Study/Coursera/Labs/TPadLib/traceTouchLetters/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_23ba2b97a614818b28a85e44a171aff42c82e39b/classes.dex" />
     </item>
     <item
